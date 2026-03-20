@@ -77,7 +77,7 @@ document.addEventListener("keyup", keyUp);
 function keyDown(e) {
   if (e.key === "ArrowRight") paddle.dx = paddle.speed;
   if (e.key === "ArrowLeft") paddle.dx = -paddle.speed;
-  if(e.code === " " && gameState !== "playing"){
+  if(e.code === "Spacebar" && gameState !== "playing"){
    resetGame();
 }}
 
