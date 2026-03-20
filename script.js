@@ -1,3 +1,9 @@
+document.body.focus();
+
+document.addEventListener("click", () => {
+  document.body.focus();
+});
+
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -9,7 +15,7 @@ let gameState = "playing";
 
 
 const catImg = new Image();
-catImg.src = "Jetpack_Cat.png";
+catImg.src = "Jetpack_cat.png";
 
 let paddle = {
   width: 195,
